@@ -39,7 +39,7 @@
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
     "@types/jest": "26.0.20",
-    "@types/node": "13.13.46",
+    "@types/node": "13.13.47",
     "@types/react": "16.14.5",
     "@typescript-eslint/eslint-plugin": "4.18.0",
     "@typescript-eslint/parser": "4.18.0",
