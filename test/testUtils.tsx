@@ -14,7 +14,10 @@ type RenderOptions = RtlRenderOptions
 
 function customRender(ui: React.ReactElement, options: RenderOptions = {}) {
   return {
-    ...rtlRender(ui, { wrapper: Providers as ComponentType, ...options }),
+    ...rtlRender(ui, {
+      wrapper: Providers as ComponentType,
+      ...options,
+    } as RenderOptions),
   }
 }
 

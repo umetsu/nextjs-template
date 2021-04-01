@@ -1,9 +1,9 @@
 import React from 'react'
-import { render } from '../testUtils'
+import { render, screen } from '../testUtils'
 import TopPage from '../../src/pages'
 
 test('トップページのレンダリング', () => {
-  const { getByText } = render(<TopPage />)
+  render(<TopPage />)
 
-  expect(getByText(/hello next.js/i)).toBeInTheDocument()
+  expect(screen.getByText(/hello next.js/i)).toBeInTheDocument()
 })
