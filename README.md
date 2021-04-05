@@ -1,5 +1,15 @@
 # Next.js Template
-入っているもの
+
+## インストールと実行
+```shell
+npm install
+npm run dev
+# または
+yarn
+yarn dev
+```
+
+## 入っているもの
 - Next.js
 - TypeScript
 - jest
@@ -7,3 +17,4 @@
 - prettier
 - eslint
 - material-ui
+- jotai
