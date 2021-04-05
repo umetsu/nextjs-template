@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import React from 'react'
 import '../styles/global.css'
 import { AppProviders } from '../components/AppProviders'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -14,7 +15,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <AppProviders>
-      <Component {...pageProps} />
+      <>
+        <Head>
+          <title>nextjs-template</title>
+        </Head>
+        <Component {...pageProps} />
+      </>
     </AppProviders>
   )
 }
